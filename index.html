@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#10142b">
 <title>چهار داشی | پایگاه رسمی رفقا</title>
 <style>
@@ -17,10 +17,37 @@ main{min-width:0}.page{display:none;animation:rise calc(.35s * var(--anim)) ease
 .page-heading{margin:8px 0 20px}.page-heading h1{margin:0 0 8px;font-size:30px}.page-heading p{margin:0;color:var(--muted);line-height:1.9}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.field{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--text);padding:12px 13px;border-radius:12px;outline:none}.field:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 15%,transparent)}.field-label{display:block;font-size:12px;color:var(--muted);margin:13px 0 7px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.setting-row{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:15px 0;border-bottom:1px solid var(--line)}.setting-row:last-child{border-bottom:0}.setting-row strong{font-size:14px;display:block}.setting-row small{display:block;color:var(--muted);font-size:11px;margin-top:5px;line-height:1.7}.switch{appearance:none;width:48px;height:27px;border-radius:30px;background:#39415b;position:relative;flex:none;cursor:pointer;transition:.2s}.switch:before{content:"";position:absolute;width:19px;height:19px;right:4px;top:4px;background:white;border-radius:50%;transition:.2s}.switch:checked{background:var(--accent)}.switch:checked:before{right:25px}.color-options{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.color-dot{width:34px;height:34px;border-radius:12px;border:3px solid transparent;outline:1px solid var(--line)}.color-dot.selected{border-color:white;outline:2px solid var(--accent)}.calendar-wrap{overflow:hidden}.calendar-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.calendar-head h3{margin:0}.calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px}.day-name{text-align:center;color:var(--muted);font-size:11px;padding:9px 0}.day{min-height:70px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:8px;font-size:12px;position:relative}.day.empty{background:transparent;border-color:transparent}.day.today{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}.day.has-note:after{content:"";position:absolute;bottom:7px;right:calc(50% - 3px);width:6px;height:6px;border-radius:50%;background:var(--accent2)}.day:hover{border-color:var(--accent);cursor:pointer}.calendar-note{margin-top:14px;color:var(--muted);font-size:12px;line-height:1.8}.news-item{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}.news-item:last-child{border-bottom:0}.news-icon{width:45px;height:45px;display:grid;place-items:center;border-radius:15px;background:var(--panel2);font-size:21px;flex:none}.news-item h3{margin:0 0 7px;font-size:15px}.news-item p{margin:0;color:var(--muted);font-size:12px;line-height:1.9}.news-item small{display:block;color:var(--accent2);font-size:10px;margin-top:7px}.rate-number{font-size:29px;font-weight:bold;margin:12px 0}.rate-note{font-size:11px;color:var(--muted);line-height:1.8}.mini-chart{height:60px;display:flex;align-items:end;gap:5px;margin-top:15px}.mini-chart i{display:block;flex:1;border-radius:5px 5px 0 0;background:linear-gradient(var(--accent2),var(--accent));opacity:.8}.notice{padding:13px 15px;border:1px solid #f4c95d44;background:#f4c95d0d;border-radius:14px;color:#e7d9a5;font-size:12px;line-height:1.9;margin-top:15px}.empty{color:var(--muted);font-size:13px;padding:20px;text-align:center}.toast-area{position:fixed;bottom:20px;left:20px;z-index:10000;display:grid;gap:8px}.toast{background:var(--panel2);border:1px solid var(--accent);box-shadow:var(--glow);padding:13px 17px;border-radius:14px;max-width:320px;animation:rise .3s ease;font-size:13px}.footer{text-align:center;color:var(--muted);font-size:11px;padding:28px 10px 10px}.mobile-nav{display:none}
 @media(max-width:1050px){.grid.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}.layout{grid-template-columns:200px minmax(0,1fr)}}
 @media(max-width:760px){.app{padding:10px}.topbar{top:5px;padding:11px;border-radius:18px}.brand{min-width:0}.brand-mark{width:42px;height:42px}.brand strong{font-size:14px}.brand small{font-size:10px}.status-pill{display:none}.layout{display:block;margin-top:12px}.sidebar{display:none}.mobile-nav{display:flex;position:fixed;bottom:9px;right:9px;left:9px;z-index:100;background:color-mix(in srgb,var(--panel) 94%,transparent);backdrop-filter:blur(18px);border:1px solid var(--line);border-radius:18px;padding:7px;gap:4px;overflow-x:auto;box-shadow:0 10px 35px #0005}.mobile-nav .nav-btn{min-width:63px;display:flex;flex-direction:column;gap:4px;padding:8px 6px;margin:0;font-size:10px;text-align:center}.mobile-nav .nav-btn .ico{font-size:18px}.mobile-nav .nav-btn.active{box-shadow:inset 0 -3px var(--accent)}main{padding-bottom:82px}.hero{padding:25px 21px}.hero:after{left:10px;font-size:150px}.grid.stats{gap:9px}.stat-card{padding:13px;gap:9px}.stat-ico{width:39px;height:39px;font-size:19px}.stat-card strong{font-size:19px}.grid.two,.grid.three,.form-grid{grid-template-columns:1fr}.card{padding:16px}.join-card{align-items:flex-start;flex-direction:column}.day{min-height:49px;padding:6px;font-size:11px}.calendar{gap:4px}.day-name{font-size:9px}.page-heading h1{font-size:25px}.top-actions .icon-btn{padding:9px}.hide-mobile{display:none}}
+
+/* WebView-safe fallbacks and extra modules */
+html,body{width:100%;overflow-x:hidden}
+body{background-color:var(--bg)}
+.card,.sidebar,.topbar{background-color:var(--panel)}
+button,.card,.field{ -webkit-tap-highlight-color:transparent }
+button{touch-action:manipulation}
+.field{width:100%;max-width:100%;min-width:0;background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:13px;padding:12px;outline:none}
+.field:focus{border-color:var(--accent)}
+.module-list{display:grid;gap:10px;margin-top:14px}
+.module-row{display:flex;align-items:center;gap:10px;justify-content:space-between;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--panel2);overflow-wrap:anywhere}
+.module-row .row-main{min-width:0;flex:1}
+.module-row .row-main small{display:block;color:var(--muted);margin-top:4px}
+.module-row button{flex-shrink:0}
+.check-row{display:flex;align-items:center;gap:10px}
+.check-row input{width:20px;height:20px;accent-color:var(--accent)}
+.big-display{font-size:clamp(30px,7vw,52px);font-weight:900;letter-spacing:1px;text-align:center;padding:18px;color:var(--accent2);font-variant-numeric:tabular-nums}
+.calc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+.calc-grid button{min-height:48px;border-radius:12px;background:var(--panel2);border:1px solid var(--line);color:var(--text);font-size:18px}
+.calc-grid button.operator{background:var(--accent);color:#fff}
+.quick-link{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px;border:1px solid var(--line);border-radius:15px;background:var(--panel2);text-decoration:none;overflow-wrap:anywhere}
+.quick-link:hover{border-color:var(--accent)}
+.note-status{font-size:12px;color:var(--accent2);min-height:20px;margin-top:8px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.sidebar{position:static;display:flex;overflow-x:auto;gap:4px;padding:8px;white-space:nowrap}.nav-title,.sidebar-foot{display:none}.nav-btn{width:auto;flex:0 0 auto;padding:10px 12px}.app{padding:10px}.topbar{top:4px;padding:10px 12px}.brand{min-width:0}.status-pill{display:none}.hero{padding:24px 20px}.grid.two,.grid.three{grid-template-columns:1fr}}
+@media(max-width:480px){.brand small{max-width:150px}.top-actions{gap:5px}.icon-btn{padding:9px}.hero h1{font-size:28px}.card{padding:16px}}
+@supports not (padding: max(0px)){.app{padding:10px}}
+
 </style>
 </head>
 <body>
-<div id="loader"><div class="loader-box"><div class="loader-logo">۴د</div><div style="font-size:22px;font-weight:bold">چهار داشی</div><div class="loader-track"><span></span></div><div class="loader-text">در حال آماده‌سازی پایگاه رفقا...</div></div></div>
+<div id="loader" role="status" aria-label="در حال بارگذاری"><div class="loader-box"><div class="loader-logo">۴د</div><div style="font-size:22px;font-weight:bold">چهار داشی</div><div class="loader-track"><span></span></div><div class="loader-text">در حال آماده‌سازی پایگاه رفقا...</div></div></div>
 <div class="app">
 <header class="topbar">
  <div class="brand"><div class="brand-mark">۴د</div><div><strong>چهار داشی</strong><small>پایگاه رسمی رفقا · نسخه نئونی</small></div></div>
@@ -98,22 +125,79 @@ main{min-width:0}.page{display:none;animation:rise calc(.35s * var(--anim)) ease
   <div class="card"><div class="stat-ico">🔐</div><h3>کلمه مخفی</h3><p class="muted">یه کلمه تصادفی برای بازی پانتومیم یا حدس‌زدن.</p><button class="primary-btn" id="secretWordBtn">نمایش کلمه</button><h3 id="secretWord" style="margin-top:15px;color:var(--accent2)">؟؟؟</h3></div>
  </div>
 </section>
+
+<section class="page" id="tasks">
+ <div class="page-heading"><h1>✅ فهرست کارها</h1><p>کارهای روزانه‌ات رو ثبت کن، انجام‌شده‌ها رو تیک بزن و همه‌چیز رو روی همین دستگاه نگه دار.</p></div>
+ <div class="card">
+  <div class="grid two" style="align-items:end"><div><label class="field-label" for="taskInput">کار جدید</label><input class="field" id="taskInput" maxlength="140" placeholder="مثلاً: هماهنگی برای دورهمی"></div><div><label class="field-label" for="taskDue">یادآور (اختیاری)</label><input class="field" id="taskDue" type="date"></div></div>
+  <button class="primary-btn" id="addTask" style="margin-top:12px">افزودن به فهرست +</button>
+  <div class="section-head"><h2>کارهای من</h2><button class="small-btn" id="clearDoneTasks">پاک‌کردن انجام‌شده‌ها</button></div>
+  <div class="module-list" id="taskList"><p class="muted">هنوز کاری اضافه نشده.</p></div>
+ </div>
+</section>
+<section class="page" id="notes">
+ <div class="page-heading"><h1>📝 دفترچه یادداشت</h1><p>ایده‌ها، قرارها و نکته‌های مهم رو سریع بنویس. ذخیره‌سازی خودکار روی همین دستگاه انجام می‌شه.</p></div>
+ <div class="card"><label class="field-label" for="scratchNote">یادداشت سریع</label><textarea class="field" id="scratchNote" rows="10" maxlength="12000" placeholder="هرچی لازمه اینجا بنویس..."></textarea><div class="note-status" id="noteStatus">آمادهٔ نوشتن</div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="secondary-btn" id="downloadNote">دریافت فایل متنی</button><button class="secondary-btn" id="clearScratch">پاک‌کردن یادداشت</button></div></div>
+</section>
+<section class="page" id="stopwatch">
+ <div class="page-heading"><h1>⏱️ کرنومتر</h1><p>برای زمان‌گیری بازی، تمرین، مطالعه یا هر کاری که دوست داری.</p></div>
+ <div class="card"><div class="big-display" id="stopwatchDisplay">00:00.0</div><div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap"><button class="primary-btn" id="swStart">شروع</button><button class="secondary-btn" id="swLap">ثبت دور</button><button class="secondary-btn" id="swReset">از نو</button></div><div class="module-list" id="lapList"></div></div>
+</section>
+<section class="page" id="calculator">
+ <div class="page-heading"><h1>🧮 ماشین‌حساب سریع</h1><p>محاسبات معمولی، بدون نیاز به باز کردن برنامهٔ دیگر.</p></div>
+ <div class="card" style="max-width:520px"><input class="field" id="calcDisplay" aria-label="نمایش ماشین حساب" value="0" inputmode="decimal" style="font-size:26px;text-align:left;direction:ltr"><div class="calc-grid" id="calcKeys">
+  <button data-calc="C">C</button><button data-calc="(">(</button><button data-calc=")">)</button><button class="operator" data-calc="/">÷</button>
+  <button data-calc="7">7</button><button data-calc="8">8</button><button data-calc="9">9</button><button class="operator" data-calc="*">×</button>
+  <button data-calc="4">4</button><button data-calc="5">5</button><button data-calc="6">6</button><button class="operator" data-calc="-">−</button>
+  <button data-calc="1">1</button><button data-calc="2">2</button><button data-calc="3">3</button><button class="operator" data-calc="+">+</button>
+  <button data-calc="0">0</button><button data-calc=".">.</button><button data-calc="back">⌫</button><button class="operator" data-calc="=">=</button>
+ </div><p class="muted" style="margin-bottom:0">برای امنیت، فقط اعداد و عملگرهای پایه پذیرفته می‌شن.</p></div>
+</section>
+<section class="page" id="links">
+ <div class="page-heading"><h1>🔗 لینک‌های سریع</h1><p>راه‌های ارتباطی و میان‌برهای پرکاربرد چهار داشی.</p></div>
+ <div class="grid two">
+  <a class="quick-link" href="https://ble.ir/join/7SYnS4zTo1" target="_blank" rel="noopener noreferrer"><span>💚 گروه رسمی چهار داشی در بله</span><strong>باز کردن ↗</strong></a>
+  <button class="quick-link" id="copyGroupLink" type="button"><span>📋 کپی لینک دعوت گروه</span><strong>کپی</strong></button>
+  <button class="quick-link" data-go="calendar" type="button"><span>🗓️ رفتن به تقویم و قرارها</span><strong>باز کردن →</strong></button>
+  <button class="quick-link" data-go="tasks" type="button"><span>✅ رفتن به فهرست کارها</span><strong>باز کردن →</strong></button>
+ </div><div class="card" style="margin-top:16px"><h3>حریم خصوصی</h3><p class="muted">یادداشت‌ها، کارها و تنظیمات این نسخه به‌صورت محلی روی دستگاه ذخیره می‌شن؛ با پاک‌شدن داده‌های مرورگر ممکنه از بین برن. برای نگه‌داری دائمی، از نسخهٔ پشتیبان تنظیمات استفاده کن.</p></div>
+</section>
+<section class="page" id="about">
+ <div class="page-heading"><h1>✨ دربارهٔ چهار داشی</h1><p>مقر جمع‌وجور رفقا؛ سبک، راست‌چین و آماده برای اجرا در مرورگر و WebView.</p></div>
+ <div class="grid two"><div class="card"><div class="stat-ico">⚡</div><h3>ساخته‌شده برای سرعت</h3><p class="muted">بدون کتابخانهٔ بیرونی یا فونت آنلاین اجباری؛ بخش‌های اصلی داخل همین فایل HTML هستند.</p></div><div class="card"><div class="stat-ico">📱</div><h3>مناسب موبایل</h3><p class="muted">چیدمان واکنش‌گرا، دکمه‌های لمسی و نوار پیمایش مناسب صفحه‌های کوچک.</p></div><div class="card"><div class="stat-ico">🛟</div><h3>لودینگ ایمن‌تر</h3><p class="muted">یک زمان‌سنج پشتیبان صفحهٔ شروع را حتی در صورت خطای بخشی از جاوااسکریپت پنهان می‌کند.</p></div><div class="card"><div class="stat-ico">💾</div><h3>ذخیره‌سازی محلی</h3><p class="muted">قابلیت‌های شخصی مثل یادداشت و فهرست کارها روی همان دستگاه ذخیره می‌شوند، اگر WebView اجازهٔ ذخیره‌سازی بدهد.</p></div></div>
+ </section>
 <div class="footer">چهار داشی © <span id="year"></span> · ساخته‌شده برای رفاقت 💜 · نسخه وب محلی</div>
 </main></div>
 <nav class="mobile-nav" id="mobileNav"></nav>
 </div><div class="toast-area" id="toastArea"></div>
 <script>
+/* WebView loader watchdog: never leave the splash screen stuck forever. */
+(function(){
+  var started=Date.now();
+  function hideSplash(){
+    var el=document.getElementById('loader');
+    if(el){el.classList.add('done');el.setAttribute('aria-hidden','true');}
+  }
+  setTimeout(hideSplash,1800);
+  window.addEventListener('load',hideSplash,{once:true});
+  document.addEventListener('DOMContentLoaded',function(){setTimeout(hideSplash,350);},{once:true});
+})();
+</script>
+<script>
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
-const navItems=[['home','⌂','خانه'],['members','👥','اعضا'],['calendar','🗓️','تقویم'],['news','📰','خبرها'],['markets','💱','ارز'],['tools','🧩','ابزارها'],['settings','⚙️','تنظیمات']];
+function safeGet(k){try{return window.localStorage.getItem(k)}catch(e){return null}}
+function safeSet(k,v){try{window.localStorage.setItem(k,v);return true}catch(e){return false}}
+function safeRemove(k){try{window.localStorage.removeItem(k);return true}catch(e){return false}}
+const navItems=[['home','⌂','خانه'],['members','👥','اعضا'],['calendar','🗓️','تقویم'],['news','📰','خبرها'],['markets','💱','ارز'],['tools','🧩','ابزارها'],['tasks','✅','کارها'],['notes','📝','یادداشت'],['stopwatch','⏱️','کرنومتر'],['calculator','🧮','ماشین‌حساب'],['links','🔗','لینک‌ها'],['about','✨','درباره'],['settings','⚙️','تنظیمات']];
 function makeNav(el){el.innerHTML=navItems.map(([id,icon,label],i)=>`<button class="nav-btn ${i===0?'active':''}" data-go="${id}"><span class="ico">${icon}</span><span>${label}</span></button>`).join('')}
 makeNav($('#desktopNav'));makeNav($('#mobileNav'));
 function go(id){$$('.page').forEach(p=>p.classList.toggle('active',p.id===id));$$('.nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.go===id));window.scrollTo({top:0,behavior:document.body.classList.contains('no-animations')?'auto':'smooth'});if(id==='markets')loadRates()}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b)go(b.dataset.go)});
 function toast(msg){const t=document.createElement('div');t.className='toast';t.textContent=msg;$('#toastArea').append(t);setTimeout(()=>t.remove(),3400)}
 const defaults={color:'#7c5cff',light:false,animations:true,glow:true,notifications:false};
-function getPrefs(){try{return {...defaults,...JSON.parse(localStorage.getItem('4dashi-prefs')||'{}')}}catch{return {...defaults}}}
+function getPrefs(){try{return {...defaults,...JSON.parse(safeGet('4dashi-prefs')||'{}')}}catch{return {...defaults}}}
 let prefs=getPrefs();
-function applyPrefs(){document.documentElement.style.setProperty('--accent',prefs.color);$('#customColor').value=prefs.color;$('#lightMode').checked=!!prefs.light;$('#animations').checked=!!prefs.animations;$('#glowMode').checked=!!prefs.glow;$('#notifications').checked=!!prefs.notifications;document.body.classList.toggle('no-animations',!prefs.animations);document.body.style.setProperty('--glow',prefs.glow?'0 0 28px color-mix(in srgb,var(--accent) 24%,transparent)':'none');if(prefs.light){document.documentElement.style.setProperty('--bg','#f1f4fb');document.documentElement.style.setProperty('--panel','#ffffff');document.documentElement.style.setProperty('--panel2','#e8edf8');document.documentElement.style.setProperty('--text','#172039');document.documentElement.style.setProperty('--muted','#65708d');document.documentElement.style.setProperty('--line','#d6deee')}else{document.documentElement.style.setProperty('--bg','#0b1020');document.documentElement.style.setProperty('--panel','#141b32');document.documentElement.style.setProperty('--panel2','#1a2340');document.documentElement.style.setProperty('--text','#f4f6ff');document.documentElement.style.setProperty('--muted','#aab3d2');document.documentElement.style.setProperty('--line','#2a3558')}$('#themeLabel').textContent=prefs.light?'روشن':'نئونی';$$('.color-dot').forEach(d=>d.classList.toggle('selected',d.dataset.color===prefs.color));localStorage.setItem('4dashi-prefs',JSON.stringify(prefs))}
+function applyPrefs(){document.documentElement.style.setProperty('--accent',prefs.color);$('#customColor').value=prefs.color;$('#lightMode').checked=!!prefs.light;$('#animations').checked=!!prefs.animations;$('#glowMode').checked=!!prefs.glow;$('#notifications').checked=!!prefs.notifications;document.body.classList.toggle('no-animations',!prefs.animations);document.body.style.setProperty('--glow',prefs.glow?'0 0 28px color-mix(in srgb,var(--accent) 24%,transparent)':'none');if(prefs.light){document.documentElement.style.setProperty('--bg','#f1f4fb');document.documentElement.style.setProperty('--panel','#ffffff');document.documentElement.style.setProperty('--panel2','#e8edf8');document.documentElement.style.setProperty('--text','#172039');document.documentElement.style.setProperty('--muted','#65708d');document.documentElement.style.setProperty('--line','#d6deee')}else{document.documentElement.style.setProperty('--bg','#0b1020');document.documentElement.style.setProperty('--panel','#141b32');document.documentElement.style.setProperty('--panel2','#1a2340');document.documentElement.style.setProperty('--text','#f4f6ff');document.documentElement.style.setProperty('--muted','#aab3d2');document.documentElement.style.setProperty('--line','#2a3558')}$('#themeLabel').textContent=prefs.light?'روشن':'نئونی';$$('.color-dot').forEach(d=>d.classList.toggle('selected',d.dataset.color===prefs.color));safeSet('4dashi-prefs',JSON.stringify(prefs))}
 applyPrefs();
 $$('.color-dot').forEach(d=>d.addEventListener('click',()=>{prefs.color=d.dataset.color;applyPrefs()}));
 $('#customColor').addEventListener('input',e=>{prefs.color=e.target.value;applyPrefs()});
@@ -133,9 +217,9 @@ let calDate=new Date(now.getFullYear(),now.getMonth(),1), selectedKey='';
 const months=['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
 function jalaliApprox(date){try{return new Intl.DateTimeFormat('fa-IR-u-ca-persian',{year:'numeric',month:'long'}).format(date)}catch{return date.toLocaleDateString('fa-IR',{year:'numeric',month:'long'})}}
 function dateKey(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
-function drawCalendar(){const grid=$('#calendarGrid');grid.innerHTML='';$('#monthTitle').textContent=jalaliApprox(calDate);['ش','ی','د','س','چ','پ','ج'].forEach(x=>{const n=document.createElement('div');n.className='day-name';n.textContent=x;grid.append(n)});const first=new Date(calDate.getFullYear(),calDate.getMonth(),1);let offset=(first.getDay()+1)%7;const days=new Date(calDate.getFullYear(),calDate.getMonth()+1,0).getDate();for(let i=0;i<offset;i++){const d=document.createElement('div');d.className='day empty';grid.append(d)}let memos={};try{memos=JSON.parse(localStorage.getItem('4dashi-memos')||'{}')}catch{}for(let n=1;n<=days;n++){const d=new Date(calDate.getFullYear(),calDate.getMonth(),n),key=dateKey(d),el=document.createElement('button');el.className='day'+(dateKey(now)===key?' today':'')+(memos[key]?' has-note':'');el.textContent=new Intl.NumberFormat('fa-IR').format(n);el.type='button';el.addEventListener('click',()=>selectDay(key,d));grid.append(el)}}
-function selectDay(key,d){selectedKey=key;$('#selectedDateText').textContent='روز انتخاب‌شده: '+d.toLocaleDateString('fa-IR',{weekday:'long',year:'numeric',month:'long',day:'numeric'});let m={};try{m=JSON.parse(localStorage.getItem('4dashi-memos')||'{}')}catch{}$('#calendarMemo').value=m[key]||''}
-$('#prevMonth').onclick=()=>{calDate.setMonth(calDate.getMonth()-1);drawCalendar()};$('#nextMonth').onclick=()=>{calDate.setMonth(calDate.getMonth()+1);drawCalendar()};$('#saveMemo').onclick=()=>{if(!selectedKey){toast('اول یک روز از تقویم انتخاب کن.');return}let m={};try{m=JSON.parse(localStorage.getItem('4dashi-memos')||'{}')}catch{}const v=$('#calendarMemo').value.trim();if(v)m[selectedKey]=v;else delete m[selectedKey];localStorage.setItem('4dashi-memos',JSON.stringify(m));drawCalendar();toast('یادداشت ذخیره شد.')};$('#clearMemo').onclick=()=>{$('#calendarMemo').value='';if(selectedKey)$('#saveMemo').click()};drawCalendar();selectDay(dateKey(now),now);
+function drawCalendar(){const grid=$('#calendarGrid');grid.innerHTML='';$('#monthTitle').textContent=jalaliApprox(calDate);['ش','ی','د','س','چ','پ','ج'].forEach(x=>{const n=document.createElement('div');n.className='day-name';n.textContent=x;grid.append(n)});const first=new Date(calDate.getFullYear(),calDate.getMonth(),1);let offset=(first.getDay()+1)%7;const days=new Date(calDate.getFullYear(),calDate.getMonth()+1,0).getDate();for(let i=0;i<offset;i++){const d=document.createElement('div');d.className='day empty';grid.append(d)}let memos={};try{memos=JSON.parse(safeGet('4dashi-memos')||'{}')}catch{}for(let n=1;n<=days;n++){const d=new Date(calDate.getFullYear(),calDate.getMonth(),n),key=dateKey(d),el=document.createElement('button');el.className='day'+(dateKey(now)===key?' today':'')+(memos[key]?' has-note':'');el.textContent=new Intl.NumberFormat('fa-IR').format(n);el.type='button';el.addEventListener('click',()=>selectDay(key,d));grid.append(el)}}
+function selectDay(key,d){selectedKey=key;$('#selectedDateText').textContent='روز انتخاب‌شده: '+d.toLocaleDateString('fa-IR',{weekday:'long',year:'numeric',month:'long',day:'numeric'});let m={};try{m=JSON.parse(safeGet('4dashi-memos')||'{}')}catch{}$('#calendarMemo').value=m[key]||''}
+$('#prevMonth').onclick=()=>{calDate.setMonth(calDate.getMonth()-1);drawCalendar()};$('#nextMonth').onclick=()=>{calDate.setMonth(calDate.getMonth()+1);drawCalendar()};$('#saveMemo').onclick=()=>{if(!selectedKey){toast('اول یک روز از تقویم انتخاب کن.');return}let m={};try{m=JSON.parse(safeGet('4dashi-memos')||'{}')}catch{}const v=$('#calendarMemo').value.trim();if(v)m[selectedKey]=v;else delete m[selectedKey];safeSet('4dashi-memos',JSON.stringify(m));drawCalendar();toast('یادداشت ذخیره شد.')};$('#clearMemo').onclick=()=>{$('#calendarMemo').value='';if(selectedKey)$('#saveMemo').click()};drawCalendar();selectDay(dateKey(now),now);
 // Iranian toman market rates: displayed estimates are intentionally labeled as approximate.
 function loadRates(){toast('برای نرخ به‌روز بازار آزاد، صفحه منبع آنلاین باز می‌شود.');}
 
@@ -146,9 +230,47 @@ $('#luckBtn').onclick=()=>{$('#luckText').textContent=['امروز وقتشه ی
 $('#randomPick').onclick=()=>{const a=$('#randomOptions').value.split(/[،,]/).map(x=>x.trim()).filter(Boolean);$('#randomResult').textContent=a.length?a[Math.floor(Math.random()*a.length)]:'اول چند گزینه بنویس.'};
 $('#secretWordBtn').onclick=()=>$('#secretWord').textContent=['فضانورد','کوهستان','پیتزا','ربات','باران','دوچرخه','کتابخانه','دایناسور','آبشار','هواپیما'][Math.floor(Math.random()*10)];
 let timerInterval=null,remaining=600;function showTimer(){const m=Math.floor(remaining/60),s=remaining%60;$('#timerDisplay').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}$('#timerStart').onclick=()=>{clearInterval(timerInterval);remaining=Math.max(1,Math.min(180,Number($('#timerMinutes').value)||10))*60;showTimer();timerInterval=setInterval(()=>{remaining--;showTimer();if(remaining<=0){clearInterval(timerInterval);toast('زمان تموم شد! یه استراحت کوتاه کن.');if(prefs.notifications&&'Notification'in window&&Notification.permission==='granted')new Notification('چهار داشی',{body:'تایمر تموم شد!'})}},1000)};$('#timerStop').onclick=()=>{clearInterval(timerInterval);toast('تایمر متوقف شد.')};
-function dataBundle(){return {prefs,memos:JSON.parse(localStorage.getItem('4dashi-memos')||'{}'),exportedAt:new Date().toISOString()}}
+function dataBundle(){return {prefs,memos:JSON.parse(safeGet('4dashi-memos')||'{}'),exportedAt:new Date().toISOString()}}
 $('#exportData').onclick=()=>{const blob=new Blob([JSON.stringify(dataBundle(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='4-dashi-backup.json';a.click();URL.revokeObjectURL(a.href);toast('فایل پشتیبان آماده شد.')};
-$('#importFile').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(d.prefs){prefs={...defaults,...d.prefs};applyPrefs()}if(d.memos)localStorage.setItem('4dashi-memos',JSON.stringify(d.memos));drawCalendar();toast('پشتیبان بازیابی شد.')}catch{toast('فایل پشتیبان معتبر نیست.')}e.target.value=''});
+$('#importFile').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(d.prefs){prefs={...defaults,...d.prefs};applyPrefs()}if(d.memos)safeSet('4dashi-memos',JSON.stringify(d.memos));drawCalendar();toast('پشتیبان بازیابی شد.')}catch{toast('فایل پشتیبان معتبر نیست.')}e.target.value=''});
+
+// Extra modules; all listeners are guarded and storage failures are non-fatal in WebView.
+function readJson(key,fallback){try{return JSON.parse(safeGet(key)||'null')||fallback}catch(e){return fallback}}
+let taskItems=readJson('4dashi-tasks',[]);
+function renderTasks(){
+ const list=$('#taskList'); if(!list)return; list.innerHTML='';
+ if(!taskItems.length){list.innerHTML='<p class="muted">هنوز کاری اضافه نشده؛ اولین مورد رو ثبت کن.</p>';return}
+ taskItems.forEach((task,i)=>{
+  const row=document.createElement('div');row.className='module-row';
+  const label=document.createElement('label');label.className='check-row row-main';
+  const cb=document.createElement('input');cb.type='checkbox';cb.checked=!!task.done;cb.addEventListener('change',()=>{taskItems[i].done=cb.checked;safeSet('4dashi-tasks',JSON.stringify(taskItems));renderTasks()});
+  const txt=document.createElement('span');txt.textContent=task.text; if(task.done)txt.style.textDecoration='line-through';
+  const meta=document.createElement('small');meta.textContent=task.due?'موعد: '+task.due:(task.done?'انجام شد':'در انتظار انجام');
+  label.append(cb,txt);const info=document.createElement('div');info.className='row-main';info.append(label,meta);
+  const del=document.createElement('button');del.className='small-btn';del.type='button';del.textContent='حذف';del.setAttribute('aria-label','حذف کار');del.addEventListener('click',()=>{taskItems.splice(i,1);safeSet('4dashi-tasks',JSON.stringify(taskItems));renderTasks()});
+  row.append(info,del);list.append(row)
+ })
+}
+renderTasks();
+$('#addTask').addEventListener('click',()=>{const text=$('#taskInput').value.trim();if(!text){toast('اول متن کار رو بنویس.');return}taskItems.unshift({text,due:$('#taskDue').value||'',done:false,id:Date.now()});safeSet('4dashi-tasks',JSON.stringify(taskItems));$('#taskInput').value='';$('#taskDue').value='';renderTasks();toast('کار به فهرست اضافه شد.')});
+$('#taskInput').addEventListener('keydown',e=>{if(e.key==='Enter')$('#addTask').click()});
+$('#clearDoneTasks').addEventListener('click',()=>{taskItems=taskItems.filter(t=>!t.done);safeSet('4dashi-tasks',JSON.stringify(taskItems));renderTasks();toast('کارهای انجام‌شده پاک شدند.')});
+const scratch=$('#scratchNote');scratch.value=safeGet('4dashi-scratch')||'';
+scratch.addEventListener('input',()=>{safeSet('4dashi-scratch',scratch.value);$('#noteStatus').textContent='ذخیره شد · '+new Date().toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'})});
+$('#clearScratch').addEventListener('click',()=>{if(scratch.value&&!confirm('یادداشت پاک شود؟'))return;scratch.value='';safeSet('4dashi-scratch','');$('#noteStatus').textContent='یادداشت پاک شد.'});
+$('#downloadNote').addEventListener('click',()=>{const blob=new Blob([scratch.value],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='chahar-dashi-note.txt';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)});
+let swRunning=false,swStarted=0,swElapsed=0,swTicker=null,laps=[];
+function swFormat(ms){let t=Math.max(0,ms),m=Math.floor(t/60000),sec=Math.floor(t/1000)%60,tenth=Math.floor(t/100)%10;return String(m).padStart(2,'0')+':'+String(sec).padStart(2,'0')+'.'+tenth}
+function swPaint(){const elapsed=swElapsed+(swRunning?performance.now()-swStarted:0);$('#stopwatchDisplay').textContent=swFormat(elapsed)}
+$('#swStart').addEventListener('click',()=>{if(swRunning){swElapsed+=performance.now()-swStarted;swRunning=false;clearInterval(swTicker);$('#swStart').textContent='ادامه'}else{swStarted=performance.now();swRunning=true;swTicker=setInterval(swPaint,100);$('#swStart').textContent='توقف'}swPaint()});
+$('#swLap').addEventListener('click',()=>{const val=swElapsed+(swRunning?performance.now()-swStarted:0);laps.unshift(val);const el=document.createElement('div');el.className='module-row';el.textContent='دور '+laps.length+' — '+swFormat(val);$('#lapList').prepend(el)});
+$('#swReset').addEventListener('click',()=>{swRunning=false;clearInterval(swTicker);swElapsed=0;laps=[];$('#lapList').innerHTML='';$('#swStart').textContent='شروع';swPaint()});
+const calc=$('#calcDisplay');
+$('#calcKeys').addEventListener('click',e=>{const b=e.target.closest('[data-calc]');if(!b)return;const k=b.dataset.calc;let v=calc.value;if(k==='C'){calc.value='0';return}if(k==='back'){calc.value=v.length>1?v.slice(0,-1):'0';return}if(k==='='){try{if(!/^[0-9+*/().\s-]+$/.test(v))throw Error();const result=Function('"use strict";return ('+v+')')();if(!Number.isFinite(result))throw Error();calc.value=String(Math.round(result*1e10)/1e10)}catch(e){calc.value='خطا'}return}calc.value=(v==='0'||v==='خطا')?k:v+k});
+$('#calcDisplay').addEventListener('input',()=>{if(!/^[0-9+*/().\s-]*$/.test(calc.value))calc.value=calc.value.replace(/[^0-9+*/().\s-]/g,'')});
+$('#copyGroupLink').addEventListener('click',async()=>{const link='https://ble.ir/join/7SYnS4zTo1';try{if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(link)}else{const ta=document.createElement('textarea');ta.value=link;ta.style.position='fixed';ta.style.opacity='0';document.body.append(ta);ta.select();const ok=document.execCommand('copy');ta.remove();if(!ok)throw Error()}toast('لینک گروه کپی شد.')}catch(e){toast('کپی خودکار در این WebView فعال نیست؛ لینک گروه در صفحه اصلی و همین بخش موجود است.')}});
+
 window.addEventListener('load',()=>setTimeout(()=>$('#loader').classList.add('done'),950));
+setTimeout(()=>{const splash=$('#loader');if(splash)splash.classList.add('done')},1200);
 </script>
 </body></html>
