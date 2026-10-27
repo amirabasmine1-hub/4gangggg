@@ -273,4 +273,79 @@ $('#copyGroupLink').addEventListener('click',async()=>{const link='https://ble.i
 window.addEventListener('load',()=>setTimeout(()=>$('#loader').classList.add('done'),950));
 setTimeout(()=>{const splash=$('#loader');if(splash)splash.classList.add('done')},1200);
 </script>
+
+<style id="connection-guard-styles">
+#connectionGuard{position:fixed;inset:0;z-index:2147483647;display:none;align-items:center;justify-content:center;padding:22px;overflow:auto;background:radial-gradient(circle at 15% 15%,rgba(53,115,255,.30),transparent 34%),radial-gradient(circle at 85% 80%,rgba(0,224,180,.20),transparent 32%),linear-gradient(135deg,#070b19 0%,#101a35 48%,#090e20 100%);color:#f7f9ff;font-family:Tahoma,Arial,sans-serif;direction:rtl}
+#connectionGuard::before,#connectionGuard::after{content:"";position:fixed;width:260px;height:260px;border:1px solid rgba(255,255,255,.12);border-radius:50%;pointer-events:none;animation:cgOrbit 18s linear infinite}
+#connectionGuard::before{top:-105px;right:-80px;box-shadow:0 0 0 24px rgba(255,255,255,.025),0 0 0 50px rgba(255,255,255,.02)}#connectionGuard::after{bottom:-130px;left:-90px;animation-direction:reverse;box-shadow:0 0 0 28px rgba(255,255,255,.025),0 0 0 56px rgba(255,255,255,.02)}
+#connectionGuard .cg-card{position:relative;width:min(100%,520px);padding:clamp(24px,5vw,42px);border:1px solid rgba(255,255,255,.17);border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.055));box-shadow:0 28px 90px rgba(0,0,0,.42),inset 0 1px rgba(255,255,255,.13);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);text-align:center;animation:cgAppear .5s cubic-bezier(.2,.8,.2,1) both}
+#connectionGuard .cg-icon{width:104px;height:104px;display:grid;place-items:center;margin:0 auto 22px;border-radius:32px;background:linear-gradient(145deg,#ff637d,#ff8b53);box-shadow:0 14px 38px rgba(255,99,125,.28),inset 0 1px rgba(255,255,255,.55);transform:rotate(-5deg)}#connectionGuard .cg-icon svg{width:58px;height:58px;transform:rotate(5deg)}
+#connectionGuard .cg-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(255,255,255,.14);border-radius:99px;background:rgba(255,255,255,.07);font-size:12px;color:#dce6ff;margin-bottom:16px}#connectionGuard .cg-dot{width:7px;height:7px;border-radius:50%;background:#ff6d7f;box-shadow:0 0 12px #ff6d7f}
+#connectionGuard h1{font-size:clamp(23px,5vw,31px);line-height:1.55;margin:0 0 12px;font-weight:900;letter-spacing:-.5px}#connectionGuard .cg-desc{font-size:14px;line-height:2.1;color:#d1d9ef;margin:0 auto 22px;max-width:420px}
+#connectionGuard .cg-reasons{display:grid;gap:10px;text-align:right;margin:20px 0 24px}#connectionGuard .cg-reason{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;border-radius:16px;background:rgba(7,12,28,.32);border:1px solid rgba(255,255,255,.08);font-size:13px;line-height:1.9;color:#e8edfa}#connectionGuard .cg-mini{flex:0 0 30px;width:30px;height:30px;display:grid;place-items:center;border-radius:10px;background:rgba(119,158,255,.17);font-size:15px}
+#connectionGuard .cg-btn{width:100%;border:0;border-radius:16px;padding:15px 18px;background:linear-gradient(100deg,#7194ff,#5de3d0);color:#071326;font:900 15px Tahoma,Arial,sans-serif;cursor:pointer;box-shadow:0 10px 28px rgba(91,191,231,.2);transition:transform .2s,filter .2s}#connectionGuard .cg-btn:active{transform:scale(.98)}#connectionGuard .cg-status{min-height:22px;margin-top:13px;color:#aebcda;font-size:12px;line-height:1.8}#connectionGuard .cg-foot{margin-top:18px;color:#8d9bbb;font-size:11px;line-height:1.8}
+@keyframes cgAppear{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes cgOrbit{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){#connectionGuard *,#connectionGuard::before,#connectionGuard::after{animation:none!important;transition:none!important}}
+</style>
+<div id="connectionGuard" role="alertdialog" aria-modal="true" aria-labelledby="cgTitle">
+ <section class="cg-card">
+  <div class="cg-icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M13 24c11-10 27-10 38 0M20 32c7-6 17-6 24 0M27 40c3-3 7-3 10 0" stroke="white" stroke-width="4" stroke-linecap="round"/><circle cx="32" cy="48" r="3.5" fill="white"/><path d="M12 12l40 40" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/></svg></div>
+  <div class="cg-badge"><span class="cg-dot"></span><span>وضعیت اتصال: نیازمند بررسی</span></div>
+  <h1 id="cgTitle">به چهار داشی وصل نشدی!</h1>
+  <p class="cg-desc">برای ورود به چهار داشی، اتصال اینترنت باید فعال باشد و موقعیت اتصال شما در محدودهٔ پشتیبانی‌شدهٔ ایران قرار بگیرد.</p>
+  <div class="cg-reasons">
+   <div class="cg-reason"><span class="cg-mini">📶</span><span><b>اینترنت را بررسی کن</b><br>ممکن است اتصال قطع شده یا شبکه پاسخ‌گو نباشد.</span></div>
+   <div class="cg-reason"><span class="cg-mini">🛡️</span><span><b>اتصال VPN یا پراکسی</b><br>اگر از VPN استفاده می‌کنی، آن را خاموش کن و دوباره امتحان کن.</span></div>
+   <div class="cg-reason"><span class="cg-mini">🇮🇷</span><span><b>محدودهٔ پشتیبانی</b><br>این برنامه برای اتصال‌هایی با موقعیت ایران طراحی شده است؛ اگر VPN نداری، ممکن است موقعیت شبکهٔ شما درست تشخیص داده نشود.</span></div>
+  </div>
+  <button class="cg-btn" id="cgRetry" type="button">⟳　تلاش دوباره برای اتصال</button>
+  <div class="cg-status" id="cgStatus" aria-live="polite">در حال بررسی اتصال…</div>
+  <div class="cg-foot">چهار داشی • برای ادامه، اتصال اینترنت و منطقهٔ شبکه بررسی می‌شود.</div>
+ </section>
+</div>
+<script id="connection-guard-script">
+(function(){
+ 'use strict';
+ var overlay=document.getElementById('connectionGuard'), status=document.getElementById('cgStatus'), retry=document.getElementById('cgRetry');
+ if(!overlay||!status||!retry)return;
+ var checking=false, lastKnownGood=false, offlineDetected=false;
+ function show(message){overlay.style.display='flex';document.documentElement.style.overflow='hidden';document.body.style.overflow='hidden';status.textContent=message||'اتصال اینترنت یا موقعیت شبکه تأیید نشد.';}
+ function hide(){overlay.style.display='none';document.documentElement.style.overflow='';document.body.style.overflow='';}
+ function recoverIfNeeded(){if(offlineDetected){offlineDetected=false;status.textContent='اتصال برگشت؛ در حال تازه‌سازی برنامه…';setTimeout(function(){window.location.reload()},500);return true;}return false;}
+ function timedFetch(url,opts,ms){var ctl=typeof AbortController!=='undefined'?new AbortController():null;var timer=setTimeout(function(){if(ctl)ctl.abort()},ms);opts=opts||{};if(ctl)opts.signal=ctl.signal;return fetch(url,opts).finally(function(){clearTimeout(timer)})}
+ async function check(){if(checking)return;checking=true;retry.disabled=true;retry.textContent='در حال بررسی اتصال…';status.textContent='در حال بررسی اینترنت و موقعیت اتصال…';
+  try{
+   if(navigator.onLine===false)throw new Error('offline');
+   // A real network request catches captive portals and WebViews where navigator.onLine is misleading.
+   await timedFetch('https://www.gstatic.com/generate_204?ts='+Date.now(),{mode:'no-cors',cache:'no-store'},4500);
+   var geo=null;
+   try{var r=await timedFetch('https://ipapi.co/json/',{cache:'no-store'},4500);if(r.ok)geo=await r.json()}catch(_e){}
+   if(geo&&geo.country_code&&String(geo.country_code).toUpperCase()!=='IR'){
+    lastKnownGood=false;show('موقعیت اتصال شما خارج از ایران تشخیص داده شد. اگر VPN یا پراکسی روشن است، خاموشش کن و دوباره امتحان کن.');
+   }else if(geo&&String(geo.country_code).toUpperCase()==='IR'){
+    lastKnownGood=true;hide();recoverIfNeeded();
+   }else{
+    // If the IP-region service is unavailable, don't falsely claim a VPN was detected.
+    lastKnownGood=true;hide();recoverIfNeeded();
+   }
+  }catch(_e){lastKnownGood=false;offlineDetected=true;show('شما اینترنت ندارید یا اتصال شبکه قابل تأیید نیست. اگر VPN هم ندارید، ممکن است مشکل از منطقه یا شبکهٔ شما باشد. این برنامه فقط اتصال با موقعیت ایران را پشتیبانی می‌کند.');}
+  finally{checking=false;retry.disabled=false;retry.textContent='⟳　تلاش دوباره برای اتصال';}
+ }
+ retry.addEventListener('click',check);
+ window.addEventListener('offline',function(){lastKnownGood=false;offlineDetected=true;show('اتصال اینترنت قطع شده است. اینترنت را وصل کن و سپس «تلاش دوباره» را بزن.');});
+ window.addEventListener('online',function(){check()});
+ document.addEventListener('visibilitychange',function(){if(!document.hidden)check()});
+ setInterval(function(){if(!document.hidden)check()},30000);
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',check,{once:true});else setTimeout(check,250);
+})();
+</script>
+
+<script id="offline-cache-registration">
+// Offline shell: requires index.html and sw.js to be hosted on the same HTTPS origin (or localhost).
+(function(){
+ if(!('serviceWorker' in navigator))return;
+ if(location.protocol!=='https:' && location.hostname!=='localhost' && location.hostname!=='127.0.0.1')return;
+ window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(err){console.warn('Service worker registration failed:',err);});});
+})();
+</script>
 </body></html>
